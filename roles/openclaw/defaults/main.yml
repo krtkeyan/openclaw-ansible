@@ -2,7 +2,7 @@
 # OpenClaw default variables
 
 # CI testing mode - skips tasks that require systemd, Docker-in-Docker, or kernel access
-ci_test: false
+ci_test: true
 
 # Tailscale settings
 # WARNING: Tasks using tailscale_authkey MUST set no_log: true to prevent credential exposure
