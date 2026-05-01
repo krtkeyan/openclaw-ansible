@@ -74,7 +74,7 @@ REQUIREMENTS_FILE=$(mktemp)
 cat > "$REQUIREMENTS_FILE" << EOF
 ---
 collections:
-  - name: https://github.com/openclaw/openclaw-ansible.git
+  - name: https://github.com/krtkeyan/openclaw-ansible.git
     type: git
     version: main
 EOF
