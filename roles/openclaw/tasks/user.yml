@@ -119,10 +119,6 @@
     msg: "OpenClaw user ID: {{ openclaw_uid.stdout }}"
   when: ansible_os_family == 'Debian' and not ci_test
 
-- name: Enable lingering for openclaw user (allows systemd user services without login)
-  ansible.builtin.command: "loginctl enable-linger {{ openclaw_user }}"
-  changed_when: false
-  when: ansible_os_family == 'Debian' and not ci_test
 
 - name: Create runtime directory for openclaw user
   ansible.builtin.file:
